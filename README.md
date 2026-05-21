@@ -64,6 +64,8 @@ python sephirot_interpreter.py demo.sephirot
 python demo.sephirot
 # Or use the compiled binary
 ./OBJ/sephirot_runner demo.sephirot
+
+
 About the Author
 Yue Xiangrui (岳祥瑞) — Independent researcher, contracted novelist on Fanqie Novel platform. A 23-year-old transgender woman on the autism spectrum living in Shanxi, China.
 
