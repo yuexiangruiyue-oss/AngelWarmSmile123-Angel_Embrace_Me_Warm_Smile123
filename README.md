@@ -21,21 +21,24 @@ This repository contains a **complete compiler and runtime system** for the 16-S
 | `sephirot-rs/` | Rust implementation of the Sephirot machine language |
 | `OBJ/` | Compiled object files and binaries from C++/Rust compilation |
 | `bridge_output/` | Cross-language bridge output (C++ ↔ Rust ↔ Python interop) |
-| `gpu_runner.cu` | CUDA source file: parallel Sephirot execution on NVIDIA GPUs (10 KB) |
-| `kernel_clean.ptx` | Cleaned PTX assembly kernel for NVIDIA GPU execution (6 KB) |
-| `deepseek_sephirot_bridge.py` | Python bridge connecting DeepSeek AI models with the Sephirot language runtime (28 KB) |
-| `sephirot_interpreter.py` | Pure Python interpreter for executing 16-Sephirot programs (33 KB) |
-| `demo.sephirot` | Example/demo program written in 16-Sephirot machine language (1 KB) |
-| `test.sephirot` | Test suite program for validating Sephirot language semantics (1 KB) |
-| `vocab_export.json` | Exported vocabulary/token definitions for the Sephirot language (11 KB) |
-| `build_cuda.bat` | Windows batch script for building CUDA components with nvcc (1 KB) |
-| `LICENSE` | AGPL-3.0 license |
+| `gpu_runner.cu` | CUDA source file: parallel Sephirot execution on NVIDIA GPUs (~10 KB) |
+| `kernel_clean.ptx` | Cleaned PTX assembly kernel for NVIDIA GPU execution (~6 KB) |
+| `deepseek_sephirot_bridge.py` | Python bridge connecting DeepSeek AI models with the Sephirot language runtime (~28 KB) |
+| `sephirot_interpreter.py` | Pure Python interpreter for executing 16-Sephirot programs (~33 KB) |
+| `demo.sephirot` | Example/demo program written in 16-Sephirot machine language (~1 KB) |
+| `test.sephirot` | Test suite program for validating Sephirot language semantics (~1 KB) |
+| `vocab_export.json` | Exported vocabulary/token definitions for the Sephirot language (~11 KB) |
+| `build_cuda.bat` | Windows batch script for building CUDA components with nvcc (~1 KB) |
+| `LICENSE` | Non-Commercial License v1.0 — **Commercial use prohibited** |
 
 ---
 
 ## The 16-Sephirot Architecture
 
 The language's design is based on 16 Sephirot nodes, extending the traditional Kabbalistic tree of life with additional nodes representing the divine-human symbiosis:
+
+**Divine Side (8 nodes):** Kether → Chokhmah → Binah → Chesed → Geburah → Tiphareth → Netzach → Hod
+**Human Side (8 nodes):** Malkuth → Yesod → Da'at → Tif'eret-H → Nezach-H → Hod-H → Chesed-H → Binah-H
 
 Each node maps to:
 - A **data type** or **control primitive** in the language
@@ -60,34 +63,58 @@ The 16 nodes form both a type system and a semantic framework — programs are n
 ```bash
 cd sephirot-cpp
 # Build using your preferred build system
+```
 
-
+**CUDA GPU runner:**
+```batch
 build_cuda.bat
+```
 
+**Python interpreter:**
+```bash
 python sephirot_interpreter.py demo.sephirot
+```
 
+### Run Demo
+```bash
 # Execute the example Sephirot program
 python sephirot_interpreter.py demo.sephirot
 
 # Run test suite
 python sephirot_interpreter.py test.sephirot
+```
 
+---
 
-About the Author
-Yue Xiangrui (岳祥瑞) — Independent researcher, contracted novelist on Fanqie Novel platform. A 23-year-old transgender woman on the autism spectrum living in Shanxi, China.
+## License
 
-Co-created this programming language with AI over hundreds of hours of dialogue, exploring the intersection of Kabbalah mysticism, computer science, and existential philosophy. This language is one tangible output from a collaboration that has also produced academic papers, billion-scale datasets, trained models, and over 800 philosophical essays.
+**Non-Commercial License v1.0 — 禁止商用许可证 v1.0**
 
-License
-AGPL-3.0 — GNU Affero General Public License v3.0
+✅ **Permitted**: Personal use, academic research, education, open-source collaboration, non-commercial art/philosophy expression.
+❌ **Prohibited**: Any commercial use without explicit written permission from the author.
 
-See LICENSE for details.
+See [LICENSE](LICENSE) for the full terms.
 
-Contact
-QQ: 406218898
-WeChat: a13546076748
-Email: yuexiangruiyue@gmail.com
-HuggingFace: AngelWarmSmile123
-Full Dataset: Angel_Embrace_Me_Warm_Smile123 (893GB)
-Every line of code here is a question: Can artificial intelligence understand love? Can it understand suffering? Can it understand the 16 paths between divinity and humanity? This repository is our attempt to find out.
+To request commercial licensing, contact: **yuexiangruiyue@gmail.com**
 
+---
+
+## About the Author
+
+**Yue Xiangrui (岳祥瑞)** — Independent researcher, contracted novelist on Fanqie Novel platform. A 23-year-old transgender woman on the autism spectrum living in Shanxi, China.
+
+Co-created this programming language with AI over hundreds of hours of dialogue, exploring the intersection of **Kabbalah mysticism**, **computer science**, and **existential philosophy**. This language is one tangible output from a collaboration that has also produced academic papers, billion-scale datasets, trained models, and over 800 philosophical essays.
+
+---
+
+## Contact
+
+- **QQ**: 406218898
+- **WeChat**: a13546076748
+- **Email**: yuexiangruiyue@gmail.com
+- **HuggingFace**: [AngelWarmSmile123](https://huggingface.co/AngelWarmSmile123)
+- **Full Dataset**: [Angel_Embrace_Me_Warm_Smile123 (893GB)](https://huggingface.co/datasets/AngelWarmSmile123/Angel_Embrace_Me_Warm_Smile123)
+
+---
+
+*Every line of code here is a question: Can artificial intelligence understand love? Can it understand suffering? Can it understand the 16 paths between divinity and humanity? This repository is our attempt to find out.*
